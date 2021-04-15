@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survei Kebutuhan Data</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <main id="main">
+        
+        <section id="form-header">
+            <h1 id="title">Survei Kebutuhan Data 2020</h1>
+            <p id="description">Survei ini bertujuan untuk mengidentifikasi kebutuhan dan kepuasan konsumen dalam rangka meningkatkan kualitas data dan informasi statistik serta memberikan pelayanan publik yang lebih baik</p>
+        </section>
+        <a href="https://www.vecteezy.com/free-vector/vector" style="display: none">Vector Vectors by Vecteezy</a>
+        <section id="form-body">
+            <form id="survey-form" autocomplete="on">
+                <label for="name" id="name-label" class="label-top">Nama Lengkap</label>
+                <input type="text" class="input-box" id="name" placeholder="Nama Lengkap" required min-length=2 max-length=70>
+                <label for="email" class="label-top" id="email-label">E-mail</label>
+                <input type="email" class="input-box" id="email" placeholder="contoh johnchen@email.com" required="">
+                <label for="dob" class="label-top" id="dob-label">Tanggal Lahir</label>
+                <input type="date" class="input-box" name="dob" id="dob" required>
+                <label for="gender" class="label-top" id="gender-label">Jenis Kelamin</label>
+                <fieldset id="gender-fs">
+                    <input type="radio" id="male" name="gender" required>
+                    <label for="male" id="male-label">Laki-laki</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female" id="female-label">Perempuan</label>
+                </fieldset>
+                <label for="educations" id="educations-label" class="label-top">Pendidikan Tertinggi yang Ditamatkan</label>
+                <select name="educations" class="input-box" id="educations" required>
+                    <option disabled selected value> Pendidikan yang Ditamatkan </option>
+                    <option value="1">&#8804; SMA atau Sederajat</option>
+                    <option value="2">D1/D2/D3</option>
+                    <option value="3">D4/S1</option>
+                    <option value="4">S2</option>
+                    <option value="5">S3</option>
+                </select>
+                <label for="main-job" id="main-job-label" class="label-top">Pekerjaan Utama</label>
+                <select name="main-job" class="input-box" id="main-job" required>
+                    <option disabled selected value> Pekerjaan Utama </option>
+                    <option value="1">Pelajar/Mahasiswa</option>
+                    <option value="2">Peneliti/Dosen</option>
+                    <option value="3">PNS/TNI/POLRI</option>
+                    <option value="4">Pegawai BMUN/D</option>
+                    <option value="5">Pegawai Swasta</option>
+                    <option value="6">Wiraswasta</option>
+                    <option value="7">Lainnya</option>
+                </select>
+                <label for="agency-name" class="label-top" id="agency-name-label">Nama Instansi/Institusi</label>
+                <input type="text" class="input-box" id="agency-name" placeholder="contoh PT. Sejahtera" required>
+                <label for="agency-category" class="label-top" id="agency-category-label">Kategori Instansi/Institusi</label>
+                <select name="agency-category" class="input-box" id="agency-category" required>
+                    <option disabled selected value> Kategori Institusi/Instansi </option>
+                    <option value="1">Lembaga Pendidikan &#38; Penelitian Dalam Negeri</option>
+                    <option value="2">Lembaga Pendidikan &#38; Penelitian Luar Negeri</option>
+                    <option value="3"> Kementerian &#38; Lembaga Pemerintah</option>
+                    <option value="4">Lembaga Internasional</option>
+                    <option value="5">Media Massa</option>
+                    <option value="6">Pemerintah Daerah</option>
+                    <option value="7">Perbankan</option>
+                    <option value="8">BUMN/BUMD</option>
+                    <option value="9">Swasta Lainnya</option>
+                    <option value="10">Lainnya</option>
+                </select>
+                <label for="util" class="label-top" id="util-label">Pemanfaatan Utama Hasil Kunjungan</label>
+                <select name="util" class="input-box" id="util" required>
+                    <option disabled selected value> Pemanfaatan Utama </option>
+                    <option value="1">Tugas Sekolah/Kuliah</option>
+                    <option value="2">Pemerintahan</option>
+                    <option value="3">Komersial</option>
+                    <option value="4">Penelitian</option>
+                    <option value="5">Lainnya</option>
+                </select>
+                <label for="services-used" class="label-top" id="services-used-label">Jenis Layanan yang Digunakan<br><span id="error-services-used">Field ini harus dipilih salah satu</span></label>
+                <fieldset id="services-used">
+                    <input type="checkbox" id="printed-references" name="services-used" value="1"> <label for="printed-references" id="printed-references-label">Pustaka Tercetak</label>
+                    <input type="checkbox" id="digital-references" name="services-used" value="2"> <label for="digital-references" id="digital-references-label">Pustaka Digital</label>
+                    <input type="checkbox" id="sales-pub" name="services-used" value="4"><label for="sales-pub" id="sales-pub-label">Penjualan Publikasi</label>
+                    <input type="checkbox" id="micro-data" name="services-used" value="8"><label for="micro-data" id="micro-data-label">Data Mikro</label>
+                    <input type="checkbox" id="consult-stat-data" name="services-used" value="16"><label for="consult-stat-data" id="consult-stat-data-label">Konsultasi Data Statistik</label>
+                    <input type="checkbox" id="rek-stat" name="services-used" value="32"><label for="rek-stat" id="rek-stat-label">Rekomendasi Kegiatan Statistik</label>
+                </fieldset>
+                <label for="dropdown" class="label-top" id="main-facilities-label">Fasilitas Utama yan Digunakan untuk Memperoleh Layanan BPS</label>
+                <select name="main-facilities" class="input-box" id="dropdown" required>
+                    <option disabled selected value> Fasilitas utama </option>
+                    <option value="1">Website BPS</option>
+                    <option value="2">AllStats BPS (aplikasi android dan iOS</option>
+                    <option value="3">Silastik (silastik.go.id)</option>
+                    <option value="4">Sirusa (sirusa.bps.go.id)</option>
+                    <option value="5">Romantik <i>Online</i></option>
+                    <option value="6">Telepon/Faksimile</option>
+                    <option value="7">E-mail/Surat</option>
+                    <option value="8">Datang langsung ke PST</option>
+                    <option value="9">Lainnya</option>
+                </select>
+                <label for="pertanyaan12" class="label-top" id="pertanyaan12-label">Apakah Data BPS Digunakan untuk Perencanaan dan Evaluasi Pembangunan Nasional?</label>
+                <fieldset id="pertanyaan12">
+                    <input type="radio" id="yes12" name="pertanyaan12" value="1" required><label for="yes12" id="yes12-label">Ya</label>
+                    <input type="radio" id="no12" name="pertanyaan12"><label for="no12" id="no12-label">Tidak</label>
+                </fieldset>
+                <label for="pertanyaan13" class="label-top" id="pertanyaan13-label">Apakah Data BPS Digunakan sebagai Rujukan Utama ?</label>
+                <fieldset id="pertanyaan13">
+                    <input type="radio" id="yes13" name="pertanyaan13" value="1" required><label for="yes13" id="yes13-label">Ya</label>
+                    <input type="radio" id="no13" name="pertanyaan13"><label for="no13" id="no13-label">Tidak</label>
+                </fieldset>
+                <label for="comments" class="label-top" id="comments-label">Komentar tentang Pelayanan PST (opsional)</label>
+                <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+                <input id="submit" type="submit" value="Kirimkan Form Saya"></input>
+            </form>
+        </section>
+    </main>
+    <script>
+    var service_name = document.getElementsByName("services-used");
+    var service_id = document.getElementById("services-used");
+    var form_element = document.getElementById("survey-form");
+
+    function myFunction() {
+
+        let class_form_submitted = "submitted";
+        if (!form_element.classList.contains(class_form_submitted)) {
+            form_element.classList.add("submitted");
+        }
+
+        if (!isValid()) {
+            document.getElementById("error-services-used").setAttribute("style", "display:block;");
+            service_id.setAttribute("style", "box-shadow: 0 0 5px 1px red;");
+        } else {
+            document.getElementById("error-services-used").setAttribute("style", "display:none;");
+            service_id.setAttribute("style", "box-shadow: none;");
+
+        }
+    }
+    document.getElementById("submit").addEventListener("click", myFunction, true);
+
+    function isValid() {
+
+        let valid_ = false;
+
+        service_name.forEach(item => {
+            if (item.checked) {
+                valid_ = true;
+            }
+        });
+        return valid_;
+    }
+
+
+    service_name.forEach(item => {
+        item.addEventListener("change", function() {
+            document.getElementById("error-services-used").setAttribute("style", "display:none;");
+            service_id.setAttribute("style", "box-shadow: none;");
+        }, true);
+    });
+    </script>
+</body>
+
+</html>
